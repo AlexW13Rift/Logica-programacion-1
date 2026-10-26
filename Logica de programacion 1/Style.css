@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.contenedor {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 20px;
+}
+
+h1 {
+    color: #333;
+    font-size: 28px;
+}
+
+p {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.pelota {
+    width: 60px;
+    height: 60px;
+    background-color: #00bcd4;
+    border-radius: 50%;
+    margin-top: 100px;
+    animation: rebote 1s infinite alternate ease-in;
+}
+
+
+@keyframes rebote {
+    0% {
+        transform: translateY(-60px);
+    }
+
+    100% {
+        transform: translateY(60px);
+    }
+}
